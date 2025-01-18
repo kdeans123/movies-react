@@ -1,6 +1,6 @@
-import { BrowserRouter as Router, Routes, Route } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './pages/Home';
-import Movies from './pages/Movies'; 
+// import Movies from './pages/Movies'; 
 
 
 function App() {
@@ -8,7 +8,6 @@ function App() {
     <Router>
         <Routes>
           <Route path="/" element={<Home/>}></Route>
-          <Route path=":id" element={<Movies/>}></Route>
         </Routes>
 
     </Router>
