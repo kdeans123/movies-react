@@ -3,6 +3,8 @@ import Home from './pages/Home';
 // import Movies from './pages/Movies'; 
 
 
+const [searchTerm, setSearchTerm] = useState([]);
+
 function App() {
   return (
     <Router>
