@@ -1,7 +1,17 @@
 import React, {useEffect, useState} from 'react'
 
 
+
+
+
+
 const Home = () => {
+    const [searchTerm, setSearchTerm] = useState([]);
+    const [searchResult, setSearchResult] = useState([]);
+
+
+
+
   return (
     <section id="landing">
     <nav>
