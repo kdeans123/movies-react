@@ -9,8 +9,17 @@ const Home = () => {
     const [searchTerm, setSearchTerm] = useState([]);
     const [searchResult, setSearchResult] = useState([]);
 
+    useEffect(() => {
+        const fetchBooks = async () => {
+            const response = await fetch(`https://www.omdbapi.com/?apikey=aecc1b78&s=${searchTerm}`);
+            const data = await response.json();
+            setSearchResults(data);
+        };
 
-
+        if (searchTerm) {
+            fetchData();
+        }
+    }, [searchTerm]);
 
   return (
     <section id="landing">
@@ -53,8 +62,10 @@ const Home = () => {
           <div className="input__wrapper">
             <input
               type="text"
+              value={searchTerm}
+              onChange={(event) => setSearchTerm(event.target.value)}
               placeholder="Search by Category, Reviews, Keywords"
-              onchange="renderMovies()" className="search__input"/>
+              className="search__input"/>
                 <i className="fa-solid fa-magnifying-glass search__icon" onClick="renderMovies()"></i>
           </div>
         </div>
