@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './pages/Home';
+import Movies from "./pages/Movies";
 // import Movies from './pages/Movies'; 
 
 
@@ -10,6 +11,7 @@ function App() {
     <Router>
         <Routes>
           <Route path="/" element={<Home/>}></Route>
+          <Route path="Movies" element={<Movies/>}></Route>
         </Routes>
 
     </Router>
