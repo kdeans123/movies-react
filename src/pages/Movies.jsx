@@ -4,7 +4,7 @@ import React, {useEffect, useState} from 'react'
 
 
 const Movies = () => {
-
+    return (
 <section id="movies">
     <nav>
       <div className="nav__container">
@@ -61,6 +61,8 @@ const Movies = () => {
 
   </section>
   </section>
+
+    )
 
   
 }
