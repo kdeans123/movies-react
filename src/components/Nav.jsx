@@ -32,10 +32,10 @@ const Nav = () => {
             <a href="/" className="menu__link" onClick="closeMenu()">Home</a>
           </li>
           <li className="menu__list">
-            <a href="#features" className="menu__link" onClick="closeMenu()">Movies</a>
+            <a href="/movies" className="menu__link" onClick="closeMenu()">Find your movie</a>
           </li>
           <li className="menu__list">
-            <a href="#features" className="menu__link" onClick="closeMenu()">Movies</a>
+            <a href="/contact" className="menu__link" onClick="closeMenu()">Contact</a>
           </li>
           
           
