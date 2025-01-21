@@ -5,6 +5,14 @@ import { Link } from 'react-router-dom';
 
 
 const Nav = () => {
+
+    function openMenu() {
+        document.body.classList =+ " menu--open";
+    }
+
+    function closeMenu() {}
+        document.body.classList.remove("menu--open");
+
   return (
     <nav>
     <div className="nav__container">
@@ -24,18 +32,18 @@ const Nav = () => {
         <FontAwesomeIcon icon="bars"/>
       </button>
       <div className="menu__backdrop">
-        <button className="btn__menu btn__menu--close" onClick="closeMenu()">
+        <button className="btn__menu btn__menu--close" onClick={openMenu}>
           <FontAwesomeIcon icon="times"/>
         </button>
         <ul className="menu__links">
           <li className="menu__list">
-            <a href="/" className="menu__link" onClick="closeMenu()">Home</a>
+            <a href="/" className="menu__link" onClick={closeMenu}>Home</a>
           </li>
           <li className="menu__list">
-            <a href="/movies" className="menu__link" onClick="closeMenu()">Find your movie</a>
+            <a href="/movies" className="menu__link" onClick={closeMenu}>Find your movie</a>
           </li>
           <li className="menu__list">
-            <a href="/contact" className="menu__link" onClick="closeMenu()">Contact</a>
+            <a href="/contact" className="menu__link" onClick={closeMenu}>Contact</a>
           </li>
           
           
