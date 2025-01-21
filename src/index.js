@@ -7,7 +7,8 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 
-library.add(faBars)
+library.add(faBars, faTimes)
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
