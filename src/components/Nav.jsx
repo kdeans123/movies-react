@@ -1,23 +1,24 @@
 import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import DatabaseLogo from './assets/the-movie-database-logo.png';
 
 
 const Nav = () => {
   return (
     <nav>
     <div className="nav__container">
-      <img className="logo" src="./assets/the-movie-database-logo.png" alt=""></img>
+      <img className="logo" src={DatabaseLogo} alt=""></img>
       <ul className="nav__links">
         <li><a href="#" className="nav__link">Home</a></li>
         <li><a href="#" className="nav__link">Find your movie</a></li>
         <li><button className="contact__btn">Contact</button></li>
       </ul>
       <button className="btn__menu" onClick="openMenu()">
-        <i className="fas fa-bars"></i>
+        <FontAwesomeIcon icon="bars"/>
       </button>
       <div className="menu__backdrop">
         <button className="btn__menu btn__menu--close" onClick="closeMenu()">
-          <i className="fas fa-times"></i>
+          <FontAwesomeIcon icon="times"/>
         </button>
         <ul className="menu__links">
           <li className="menu__list">
