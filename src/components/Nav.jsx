@@ -1,17 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import DatabaseLogo from './assets/the-movie-database-logo.png';
 import { Link } from 'react-router-dom';
 
 
 const Nav = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
 
     function openMenu() {
+        setMenuOpen(true);
         document.body.classList =+ " menu--open";
     }
 
     function closeMenu() {}
+        setMenuOpen(false);
         document.body.classList.remove("menu--open");
+
+    
 
   return (
     <nav>
