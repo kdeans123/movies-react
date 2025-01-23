@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom';
 
 
 const Nav = () => {
-    const [menuOpen, setMenuOpen] = useState(false);
+    const [openMenu, setOpenMenu] = useState(false);
 
     function openMenu() {
-        setMenuOpen(true);
+        setOpenMenu(true);
         document.body.classList =+ " menu--open";
     }
 
