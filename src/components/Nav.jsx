@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import DatabaseLogo from './assets/the-movie-database-logo.png';
 import { Link } from 'react-router-dom';
 
 
@@ -13,7 +12,7 @@ const Nav = () => {
     }
 
     function closeMenu() {}
-        setMenuOpen(false);
+        setOpenMenu(false);
         document.body.classList.remove("menu--open");
 
     
@@ -22,7 +21,7 @@ const Nav = () => {
     <nav>
     <div className="nav__container">
       <Link to="/">
-            <img className="logo" src={DatabaseLogo} alt=""></img>
+            <img className="logo" src='/the-movie-database-logo.png' alt=""></img>
       </Link>      
       <ul className="nav__links">
         <li>
