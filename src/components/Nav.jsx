@@ -23,7 +23,7 @@ const Nav = () => {
     <nav>
     <div className="nav__container">
       <Link to="/">
-            <img className="logo" src='/the-movie-database-logo.png' alt=""></img>
+            <img className="logo" src={DatabaseLogo} alt=""></img>
       </Link>      
       <ul className="nav__links">
         <li>
