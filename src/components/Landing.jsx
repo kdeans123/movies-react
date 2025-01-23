@@ -7,7 +7,7 @@ const Landing = () => {
   async function getMovieInfo(searchTerm) {
     try {
       const data = await fetch(
-        `http://www.omdbapi.com/?apikey=YOUR-API-KEY&s=${searchTerm}`
+        `https://www.omdbapi.com/?apikey=aecc1b78&s=${searchTerm}`
       );
       const movieData = await data.json();
       // Check if there's an error message from the API response
