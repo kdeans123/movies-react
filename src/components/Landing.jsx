@@ -16,7 +16,6 @@ const Landing = () => {
               type="text"
               value={searchTerm}
               onChange={(event) => setSearchTerm(event.target.value)}
-              placeholder="Search by Category, Reviews, Keywords"
               className="search__input"/>
                 <i className="fa-solid fa-magnifying-glass search__icon" onClick="renderMovies()"></i>
           </div>
