@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Landing = () => {
 
@@ -17,7 +18,7 @@ const Landing = () => {
               value={searchTerm}
               onChange={(event) => setSearchTerm(event.target.value)}
               className="search__input"/>
-                <i className="fa-solid fa-magnifying-glass search__icon" onClick="renderMovies()"></i>
+                <FontAwesomeIcon icon="magnifying-glass onClick"/>
           </div>
         </div>
       </div>
