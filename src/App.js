@@ -6,8 +6,6 @@ import Landing from "./components/Landing";
 import Footer from "./components/Footer";
 
 
-const [searchTerm, setSearchTerm] = useState([]);
-
 function App() {
   return (
     <Router>
@@ -16,7 +14,7 @@ function App() {
         <Landing/>
         <Routes>
           <Route path="/" element={<Home/>}></Route>
-          <Route path="/movies" element={<Movies/>}></Route>
+          <Route path="/" element={<Movies/>}></Route>
         </Routes>
         <Footer/>
         </div>

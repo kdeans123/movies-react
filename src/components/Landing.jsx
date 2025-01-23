@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react';
 
 const Landing = () => {
+
+  const [searchTerm, setSearchTerm] = useState('');
+
   return (
     <section id="landing">
     <header>

@@ -1,29 +1,24 @@
-import React, {useEffect, useState} from 'react'
-
-
-
-
-
-
+import React, { useEffect, useState } from 'react';
 
 const Home = () => {
-    const [searchTerm, setSearchTerm] = useState([]);
-    const [searchResult, setSearchResult] = useState([]);
+    const [searchTerm] = useState('');
+    const [searchResults, setSearchResults] = useState([]);
 
     useEffect(() => {
-        const fetchBooks = async () => {
+        const fetchMovies = async () => {
             const response = await fetch(`https://www.omdbapi.com/?apikey=aecc1b78&s=${searchTerm}`);
             const data = await response.json();
-            setSearchResults(data);
+            setSearchResults(data.Search);
         };
 
         if (searchTerm) {
-            fetchData();
+            fetchMovies();
         }
     }, [searchTerm]);
 
+
   return (
-    
+   <div> Movie Placeholder </div> 
   )
 }
 
