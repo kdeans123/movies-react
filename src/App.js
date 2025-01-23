@@ -13,7 +13,7 @@ function App() {
         <Nav/>
         <Landing/>
         <Routes>
-          <Route path="/" element={<Home/>}></Route>
+          <Route path="/" exact element={<Home/>}></Route>
           <Route path="/" element={<Movies/>}></Route>
         </Routes>
         <Footer/>
