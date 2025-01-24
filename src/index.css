@@ -206,8 +206,8 @@ LANDING
 */
 
 #landing {
-  background-color: rgba(126, 84, 124, 0.1)
-  background-image: `url(${"./assets/greatest-movies-of-all-time.png"})`;
+  background-color: rgba(126, 84, 124, 0.1);
+  background-image: url('./assets/greatest-movies-of-all-time.png');
   opacity:0.5;
 }
 
