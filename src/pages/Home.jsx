@@ -1,27 +1,13 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-const Home = () => {
-
-const [searchTerm, setSearchTerm] = useState("");
-  const [movies, setMovies] = useState([]);
-  async function getMovieInfo(searchTerm) {
-    try {
-      const data = await fetch(
-        `https://www.omdbapi.com/?apikey=aecc1b78&s=${searchTerm}`
-      );
-      const movieData = await data.json();
-      // Check if there's an error message from the API response
-      if (movieData.Error) {
-        console.error('Error fetching movie info:', movieData.Error);
-        // You can also set an error state to display to the user here
-        return;
-      }
-      const result = movieData.Search;
-      setMovies(result);
-    } catch (error) {
-      console.error('Error fetching movie info:', error);
+const Home = ({ setSearchTerm }) => {
+    const navigate = useNavigate()
+    function loadingSearch() {
+        console.log("fwrwrw")
+        navigate("/movies")
     }
-  }
+ 
   return (
     <section id="landing">
       <header>
@@ -32,27 +18,15 @@ const [searchTerm, setSearchTerm] = useState("");
             <div className="input__wrapper">
               <input
                 type="text"
-                value={searchTerm}
                 onChange={(event) => setSearchTerm(event.target.value)}
                 className="search__input"
               />
-              <button onClick={() => getMovieInfo(searchTerm)}>
+              <button onClick={loadingSearch}>
                 Search
               </button>
             </div>
           </div>
-          <div>
-            {movies.map((movie, index) => (
-              <div key={index}>
-                <div>
-                  <img src={movie?.Poster} alt="movie poster" />
-                  <h4>{movie.Title}</h4>
-                  <h5>{movie.Year}</h5>
-                  <h5>{movie.Type}</h5>
-                </div>
-              </div>
-            ))}
-          </div>
+          
         </div>
       </header>
     </section>

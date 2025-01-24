@@ -3,7 +3,32 @@ import React, {useEffect, useState} from 'react'
 
 
 
-const Movies = ({ movies }) => {
+const Movies = ({ searchTerm }) => {
+  const [movies, setMovies] = useState([]);
+  async function getMovieInfo(searchTerm) {
+    try {
+      const data = await fetch(
+        `https://www.omdbapi.com/?apikey=aecc1b78&s=${searchTerm}`
+      );
+      const movieData = await data.json();
+      console.log(movieData)
+      // Check if there's an error message from the API response
+      if (movieData.Error) {
+        console.error('Error fetching movie info:', movieData.Error);
+        // You can also set an error state to display to the user here
+        return;
+      }
+      const result = movieData.Search;
+      setMovies(result);
+    } catch (error) {
+      console.error('Error fetching movie info:', error);
+    }
+  }
+
+  useEffect(() => {
+    getMovieInfo(searchTerm)
+  }, [searchTerm] )
+
     return (
 <>
 <div id="movies__body">
@@ -23,11 +48,18 @@ const Movies = ({ movies }) => {
                           </select>
                     </div>
                     <div className='movies'>
-                        {
-                          movies.map((movie) => (
-                            <Movies movie={movie} key={movie.id}/>
-                          ))
-                        }
+                   
+                    {movies.map((movie, index) => (
+                        <div key={index}>
+                          <div>
+                            <img src={movie?.Poster} alt="movie poster" />
+                            <h4>{movie.Title}</h4>
+                            <h5>{movie.Year}</h5>
+                            <h5>{movie.Type}</h5>
+                          </div>
+                        </div>
+                      ))}
+
                     </div>
               </div>
                 
