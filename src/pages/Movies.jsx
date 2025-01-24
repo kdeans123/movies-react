@@ -38,6 +38,16 @@ const Movies = ({ searchTerm }) => {
               <div className='row'>
                     <div className="movies__header">
                         <h2 className='section__title movies__header--title'>Movies</h2>
+                        <div className="input__wrapper">
+              <input
+                type="text"
+                onChange={(event) => setSearchTerm(event.target.value)}
+                className="search__input"
+              />
+              <button onClick={loadingSearch}>
+                Search
+              </button>
+            </div>
                           <h2 className="search__results black">Search results:</h2>
                           <select id="filter" defaultValue="DEFAULT">
                             <option value="DEFAULT" disabled>Sort</option>
