@@ -3,7 +3,7 @@ import React, {useEffect, useState} from 'react'
 
 
 
-const Movies = ({ searchTerm }) => {
+const Movies = ({ searchTerm, setSearchTerm }) => {
   const [movies, setMovies] = useState([]);
   async function getMovieInfo(searchTerm) {
     try {
