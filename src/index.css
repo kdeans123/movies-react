@@ -385,30 +385,30 @@ footer {
 /* 
 **
 
-BOOKS PAGE
+MOVIES PAGE
 
 **
 */
 
-#books__body {
+#movies__body {
   background-color: rgba(115, 66, 214, 0.1);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-#books__main {
+#moviess__main {
   flex: 1;
 }
 
-.books__header {
+.moviess__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 24px;
 }
 
-.books__header--title {
+.movies__header--title {
   margin-bottom: 0;
 }
 
@@ -425,7 +425,7 @@ select {
   max-width: 200px;
 }
 
-.books__loading {
+.movies__loading {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -434,11 +434,11 @@ select {
   color: #7342d6;
 }
 
-.books__loading--spinner {
+.movies__loading--spinner {
   display: none !important;
 }
 
-.books__loading .books__loading--spinner {
+.movies__loading .movies__loading--spinner {
   display: block !important;
 }
 

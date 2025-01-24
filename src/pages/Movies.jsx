@@ -12,6 +12,7 @@ const Movies = ({ movies }) => {
             <div className="movies__container">
               <div className='row'>
                     <div className="movies__header">
+                        <h2 className='section__title movies__header--title'>Movies</h2>
                           <h2 className="search__results black">Search results:</h2>
                           <select id="filter" defaultValue="DEFAULT">
                             <option value="DEFAULT" disabled>Sort</option>
@@ -23,7 +24,9 @@ const Movies = ({ movies }) => {
                     </div>
                     <div className='movies'>
                         {
-                          movies.map
+                          movies.map((movie) => (
+                            <Movies movie={movie} key={movie.id}/>
+                          ))
                         }
                     </div>
               </div>
