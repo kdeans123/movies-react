@@ -14,7 +14,7 @@ function App() {
         <Nav/>
         <Routes>
           <Route path="/" exact element={<Home setSearchTerm={setSearchTerm}/>}></Route>
-          <Route path="/movies" element={<Movies searchTerm={searchTerm}/>}></Route>
+          <Route path="/movies" element={<Movies searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>}></Route>
         </Routes>
         <Footer/>
         </div>
