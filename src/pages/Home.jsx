@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 const Home = ({ setSearchTerm }) => {
     const navigate = useNavigate()
     function loadingSearch() {
-        console.log("fwrwrw")
+
         navigate("/movies")
     }
  
