@@ -87,9 +87,9 @@ const Movies = ({ searchTerm, setSearchTerm }) => {
                   </select>
                 </div>
                 <div className="movies">
-                  <div className="movie__row">
+        
                         {movies.map((movie, index) => (
-                        <div key={index}>
+                        <div className="movie-card" key={index}>
                           <div>
                             <img src={movie?.Poster} className="movie__img" alt="movie poster" />
                             <h4>{movie.Title}</h4>
@@ -98,7 +98,7 @@ const Movies = ({ searchTerm, setSearchTerm }) => {
                           </div>
                         </div>
                       ))}
-                  </div>
+                 
 
                    
                 </div>

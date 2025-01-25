@@ -331,9 +331,15 @@ input {
   padding: 24px;
 }
 
-.movie__row {
-  width: 25%;
-  padding: 24px;
+.movie-card{
+  max-width: 250px;
+  width: 100%;
+}
+.movies{
+  display: flex;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .movie__img {
