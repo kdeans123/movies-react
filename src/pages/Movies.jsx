@@ -87,16 +87,20 @@ const Movies = ({ searchTerm, setSearchTerm }) => {
                   </select>
                 </div>
                 <div className="movies">
-                  {movies.map((movie, index) => (
-                    <div key={index}>
-                      <div>
-                        <img src={movie?.Poster} className="movie__img" alt="movie poster" />
-                        <h4>{movie.Title}</h4>
-                        <h5>{movie.Year}</h5>
-                        <h5>{movie.Type}</h5>
-                      </div>
-                    </div>
-                  ))}
+                  <div className="movie__row">
+                        {movies.map((movie, index) => (
+                        <div key={index}>
+                          <div>
+                            <img src={movie?.Poster} className="movie__img" alt="movie poster" />
+                            <h4>{movie.Title}</h4>
+                            <h5>{movie.Year}</h5>
+                            <h5>{movie.Type}</h5>
+                          </div>
+                        </div>
+                      ))}
+                  </div>
+
+                   
                 </div>
               </div>
             </div>

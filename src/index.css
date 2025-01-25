@@ -331,6 +331,11 @@ input {
   padding: 24px;
 }
 
+.movie__row {
+  width: 25%;
+  padding: 24px;
+}
+
 .movie__img {
   max-height: 380px;
   width: 100%;
