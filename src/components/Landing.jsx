@@ -4,6 +4,13 @@ import React, { useState } from 'react';
 const Landing = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [movies, setMovies] = useState([]);
+
+  const handleKeyPress = (event) => {
+    if (event.key === 'Enter') {
+      getMovieInfo(searchTerm);
+    }
+  };
+
   async function getMovieInfo(searchTerm) {
     try {
       const data = await fetch(
@@ -34,6 +41,7 @@ const Landing = () => {
                 type="text"
                 value={searchTerm}
                 onChange={(event) => setSearchTerm(event.target.value)}
+                onKeyPress={handleKeyPress}
                 className="search__input"
               />
               <button onClick={() => getMovieInfo(searchTerm)}>
