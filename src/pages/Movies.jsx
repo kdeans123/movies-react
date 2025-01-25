@@ -90,7 +90,7 @@ const Movies = ({ searchTerm, setSearchTerm }) => {
                   {movies.map((movie, index) => (
                     <div key={index}>
                       <div>
-                        <img src={movie?.Poster} alt="movie poster" />
+                        <img src={movie?.Poster} className="movie__img" alt="movie poster" />
                         <h4>{movie.Title}</h4>
                         <h5>{movie.Year}</h5>
                         <h5>{movie.Type}</h5>
