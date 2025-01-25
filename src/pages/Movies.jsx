@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from "react";
+
+
+
 const Movies = ({ searchTerm, setSearchTerm }) => {
   const [movies, setMovies] = useState([]);
   const [sortOption, setSortOption] = useState("DEFAULT");
@@ -42,11 +45,15 @@ const Movies = ({ searchTerm, setSearchTerm }) => {
           break;
       }
       setMovies(sortedMovies);
+      // that returns sorted movies
     };
     if (movies.length > 0) {
       sortMovies();
+      // if there are no movies, nothing is displayed as nothing is to be sorted 
     }
   }, [movies, sortOption]);
+
+  // dependencies. We are sorting the movies, copying the, and switching variable from default to a to z or 
   return (
     <>
       <div id="movies__body">
