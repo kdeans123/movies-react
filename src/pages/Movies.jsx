@@ -107,4 +107,4 @@ const Movies = ({ searchTerm, setSearchTerm }) => {
     </>
   );
 };
-export default Movies; (edited) 
+export default Movies;
