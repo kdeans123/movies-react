@@ -101,8 +101,9 @@ const Movies = ({ searchTerm, setSearchTerm }) => {
                             <h4>{movie.Title}</h4>
                             <h5>{movie.Year}</h5>
                             <h5>{movie.Genre}</h5>
-                            </div>
                             <Link to={`/movie/${movie.imdbID}`}>More Info </Link>
+                            </div>
+                            
                           </div>
                         </div>
                       ))}
