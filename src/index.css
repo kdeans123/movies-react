@@ -297,7 +297,6 @@ input {
 }
 
 .overlay {
-  background-image: url("./assets/Movies.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -370,7 +369,7 @@ input {
 /*  FOOTER    */
 
 footer {
-  background-color: #673817;
+  background-color: #a00548;
 }
 
 .footer__logo {
