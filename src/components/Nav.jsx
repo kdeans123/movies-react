@@ -32,7 +32,7 @@ const Nav = () => {
         <li>
             <Link to="/movies" className="nav__link">Find your movie</Link>
             </li>
-        <li><button className="contact__btn">Contact</button></li>
+        <li><button className="contact__btn no-cursor">Contact</button></li>
       </ul>
       <button className="btn__menu" onClick="openMenu()">
         <FontAwesomeIcon icon="bars"/>

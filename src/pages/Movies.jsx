@@ -90,7 +90,7 @@ const Movies = ({ searchTerm, setSearchTerm }) => {
                     <option value="YEAR_ASC">Year Ascending</option>
                   </select>
                 </div>
-                <h2 className="search__results black">Search results:{searchTerm}</h2>
+                <h2 className="search__results black">Search results:  {searchTerm}</h2>
                 <div className="movies">
         
                         {movies.map((movie, index) => (
