@@ -62,21 +62,23 @@ const Movies = ({ searchTerm, setSearchTerm }) => {
           <section>
             <div className="movies__container">
               <div className="row">
+              <h2 className="section__title movies__header--title">Movies</h2>
                 <div className="movies__header">
-                  <h2 className="section__title movies__header--title">Movies</h2>
+                  
                   <div className="input__wrapper">
                     <input
                       type="text"
                       onChange={(event) => setSearchTerm(event.target.value)}
                       className="search__input"
                     />
-                    <button onClick={() => getMovieInfo(searchTerm)}>Search</button>
+                    <button className="btn" onClick={() => getMovieInfo(searchTerm)}>Search</button>
                   </div>
-                  <h2 className="search__results black">Search results:{searchTerm}</h2>
+                  
                   <select
                     id="filter"
                     value={sortOption}
                     onChange={(e) => setSortOption(e.target.value)}
+                    className="sort__field"
                   >
                     <option value="DEFAULT" disabled>
                       Sort
@@ -87,6 +89,7 @@ const Movies = ({ searchTerm, setSearchTerm }) => {
                     <option value="YEAR_ASC">Year Ascending</option>
                   </select>
                 </div>
+                <h2 className="search__results black">Search results:{searchTerm}</h2>
                 <div className="movies">
         
                         {movies.map((movie, index) => (
