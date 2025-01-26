@@ -4,6 +4,7 @@ import Movies from "./pages/Movies";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import { useState } from "react";
+import MovieInfo from "./pages/MovieInfo";
 
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
         <Routes>
           <Route path="/" exact element={<Home setSearchTerm={setSearchTerm}/>}></Route>
           <Route path="/movies" exact element={<Movies searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>}></Route>
-          <Route path="/movies/:id" element={MovieInfo}/>
+          <Route path="/movies/:id" element={<MovieInfo/>}/>
         </Routes>
         <Footer/>
         </div>
