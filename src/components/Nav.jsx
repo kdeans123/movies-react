@@ -43,13 +43,13 @@ const Nav = () => {
         </button>
         <ul className="menu__links">
           <li className="menu__list">
-            <Link to="/" className="menu__link" onClick={closeMenu}>Home</a>
+            <Link to="/" className="menu__link" onClick={closeMenu}>Home</Link>
           </li>
           <li className="menu__list">
-            <Link to="/movies" className="menu__link" onClick={closeMenu}>Find your movie</a>
+            <Link to="/movies" className="menu__link" onClick={closeMenu}>Find your movie</Link>
           </li>
           <li className="menu__list">
-            <Link to="/contact" className="menu__link" onClick={closeMenu}>Contact</a>
+            <Link to="/contact" className="menu__link" onClick={closeMenu}>Contact</Link>
           </li>
           
           

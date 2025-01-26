@@ -35,7 +35,7 @@ const Landing = () => {
         <div className="header__container">
           <div className="header__description">
             <h1>America's most awarded movies platform</h1>
-            <h2>Find the movie you love</h2>
+            <h2>Find a movie you love</h2>
             <div className="input__wrapper">
               <input
                 type="text"
@@ -45,7 +45,7 @@ const Landing = () => {
                 className="search__input"
               />
               <button onClick={() => getMovieInfo(searchTerm)}>
-                Search
+                SEARCH
               </button>
             </div>
           </div>
