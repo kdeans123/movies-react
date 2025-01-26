@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from 'react-router-dom';
-import DatabaseLogo from '../assets/DAtabase-logo.png';
+import DatabaseLogo from '../assets/Movie Database - logo.png';
 
 
 const Nav = () => {

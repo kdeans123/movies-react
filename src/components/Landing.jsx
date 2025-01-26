@@ -44,7 +44,7 @@ const Landing = () => {
                 onKeyPress={handleKeyPress}
                 className="search__input"
               />
-              <button onClick={() => getMovieInfo(searchTerm)}>
+              <button className='btn' onClick={() => getMovieInfo(searchTerm)}>
                 SEARCH
               </button>
             </div>

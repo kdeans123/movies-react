@@ -71,7 +71,7 @@ const Movies = ({ searchTerm, setSearchTerm }) => {
                       onChange={(event) => setSearchTerm(event.target.value)}
                       className="search__input"
                     />
-                    <button className="btn" onClick={() => getMovieInfo(searchTerm)}>Search</button>
+                    <button className="btn" onClick={() => getMovieInfo(searchTerm)}>SEARCH</button>
                   </div>
                   
                   <select
