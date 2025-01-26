@@ -51,11 +51,15 @@ const MovieInfo = () => {
                             {/* Movie information */}
                             <div className="movie__selected--description">
                                 <h2 className="movie__selected--title">{movie.Title}</h2>
-                                <h3 className="movie__selected--genre">{movie.Genre}</h3>
-                                <h3 className="movie__selected--year">{movie.Year}</h3>
-                                <h3 className="movie__selected--director">{movie.Director}</h3>
-                                <h3 className="movie__summary--title">Summary</h3>
+                                <h3 className="movie__selected--genre">Genre: {movie.Genre}</h3>
+                                <h3 className="movie__selected--year">Year: {movie.Year}</h3>
+                                <h3 className="movie__selected--director">Director: {movie.Director}</h3>
+                                <h3 className="movie__summary--title">Summary: </h3>
                                 <p className="movie__summary--para">{movie.Plot}</p>
+                                <h3 className="movie__selected--actors">Actors: {movie.Actors}</h3>
+                                <h3 className="movie__selected--country">Country: {movie.Country}</h3>
+                                <h3 className="movie__selected--language">Language: {movie.Language}</h3>
+                                <h3 className="movie__selected--runtime">Time: {movie.Runtime}</h3>
                             </div>
                         </div>
                     </div>
