@@ -96,9 +96,11 @@ const Movies = ({ searchTerm, setSearchTerm }) => {
                         <div className="movie-card" key={index}>
                           <div>
                             <img src={movie?.Poster} className="movie__img" alt="movie poster" />
+                            <div className="movie__description">
                             <h4>{movie.Title}</h4>
                             <h5>{movie.Year}</h5>
                             <h5>{movie.Type}</h5>
+                            </div>
                           </div>
                         </div>
                       ))}

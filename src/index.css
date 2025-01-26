@@ -357,6 +357,11 @@ input {
   
 }
 
+.movie__description {
+  padding: 12px;
+  text-align: center;
+}
+
 .movies__header {
   display: flex;
   justify-content: space-between;
