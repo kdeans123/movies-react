@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 
 
@@ -101,6 +102,7 @@ const Movies = ({ searchTerm, setSearchTerm }) => {
                             <h5>{movie.Year}</h5>
                             <h5>{movie.Genre}</h5>
                             </div>
+                            <Link to='/movie/${movie.imdbID}'>More Info </Link>
                           </div>
                         </div>
                       ))}
