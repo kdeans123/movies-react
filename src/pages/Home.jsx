@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import UndrawBooks from "../assets/undraw_home-cinema_jdm1.svg"
 
 const Home = ({ setSearchTerm }) => {
     const navigate = useNavigate()
@@ -22,10 +23,13 @@ const Home = ({ setSearchTerm }) => {
                 className="search__input"
               />
               <button onClick={loadingSearch}>
-                Search
+                Browse movies
               </button>
             </div>
           </div>
+          <figure className="header__img--wrapper">
+            <img src={UndrawBooks} alt="" />
+          </figure>
           
         </div>
       </header>
