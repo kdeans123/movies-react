@@ -120,6 +120,7 @@ button:active {
 
 .logo {
   width: 160px;
+  margin: 32px;
 }
 
 .nav__container {
