@@ -148,7 +148,7 @@ button:active {
   background-color: transparent;
   font-size: 40px;
   border: none;
-  color: #7342d6;
+  color: #e993bf;
   display: none;
 }
 
@@ -433,7 +433,7 @@ select {
   justify-content: center;
   padding-top: 60px;
   font-size: 60px;
-  color: #7342d6;
+  color: #e993bf;
 }
 
 .movies__loading--spinner {
