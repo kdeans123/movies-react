@@ -22,8 +22,8 @@ const Home = ({ setSearchTerm }) => {
                 onChange={(event) => setSearchTerm(event.target.value)}
                 className="search__input"
               />
-              <button onClick={loadingSearch}>
-                Browse movies
+              <button className="btn" onClick={loadingSearch}>
+                Search
               </button>
             </div>
           </div>
