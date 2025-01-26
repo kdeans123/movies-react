@@ -71,7 +71,7 @@ const Movies = ({ searchTerm, setSearchTerm }) => {
                     />
                     <button onClick={() => getMovieInfo(searchTerm)}>Search</button>
                   </div>
-                  <h2 className="search__results black">Search results:</h2>
+                  <h2 className="search__results black">Search results:{searchTerm}</h2>
                   <select
                     id="filter"
                     value={sortOption}
