@@ -23,7 +23,8 @@ const Movies = ({ searchTerm, setSearchTerm }) => {
     }
   }
   useEffect(() => {
-    getMovieInfo(searchTerm);
+    const defaultSearch = searchTerm || "2025"
+    getMovieInfo(defaultSearch);
   }, [searchTerm]);
   useEffect(() => {
     const sortMovies = () => {
