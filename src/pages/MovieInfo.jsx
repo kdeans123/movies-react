@@ -24,11 +24,12 @@ const MovieInfo = ({ movies }) => {
                         <figure className="movie__selected--figure">
                             <img src={movie.url} alt="" className="movie__selected--img" />
                         </figure>
-                        <div className="movie__selected--descriptiion">
+                        <div className="movie__selected--description">
                             <h2 className="movie__selected--title">{movie.Title}</h2>
                             <h3 className="movie__selected--genre">{movie.Genre}</h3>
                             <h3 className="movie__selected--year">{movie.Year}</h3>
                             <h3 className="movie__selected--director">{movie.Director}</h3>
+                            <h3 className="movie__summary--title">Summary</h3>
                             <p className="movie__summary--para">{movie.Plot}</p>
 
                         </div>

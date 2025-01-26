@@ -99,7 +99,7 @@ const Movies = ({ searchTerm, setSearchTerm }) => {
                             <div className="movie__description">
                             <h4>{movie.Title}</h4>
                             <h5>{movie.Year}</h5>
-                            <h5>{movie.Type}</h5>
+                            <h5>{movie.Genre}</h5>
                             </div>
                           </div>
                         </div>
